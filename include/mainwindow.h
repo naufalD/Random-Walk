@@ -21,12 +21,20 @@ protected:
     virtual void timerEvent( QTimerEvent* ) QWT_OVERRIDE;
 
 private:
-    int m_previousXRand;
-    int m_previousYRand;
-    double m_currentX;
-    double m_currentY;
-    QPolygonF m_points;
-    QwtPlotCurve *m_curve;
+    int m_previousXRand1;
+    int m_previousYRand1;
+    int m_previousXRand2;
+    int m_previousYRand2;
+    int pause = 0;
+    int count =0;
+    double m_currentX1;
+    double m_currentY1;
+    double m_currentX2;
+    double m_currentY2;
+    QPolygonF m_points1;
+    QPolygonF m_points2;
+    QwtPlotCurve *m_curve1;
+    QwtPlotCurve *m_curve2;
     Plot *m_plot;
 
 
